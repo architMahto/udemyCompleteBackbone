@@ -52,7 +52,7 @@ var NewVehicleView = Backbone.View.extend({
         var $input = this.$el.find('.entryVehicle');
         var newVehicle = $input.val();
         $input.val("");
-        this.eventAggregator.trigger("onAddVehicle", newVehicle);
+        //this.eventAggregator.trigger("onAddVehicle", newVehicle);
         console.log("Vehicle " + newVehicle +" Entered!");
     },
 
@@ -71,14 +71,9 @@ var VehiclesView = Backbone.View.extend({
         //this.eventAggregator.on("onAddVehicle", this.onVehicleAdded, this);
     },
 
-    onVehicleAdded: function(vehicle) {
+    /*onVehicleAdded: function(vehicle) {
         var addedVehicle = new VehicleView({model: vehicle});
         this.model.add(addedVehicle);
-    },
-
-    /*prependModel: function(vehicle) {
-        var prependedVehicle = new VehicleView({ model: vehicle, eventAggregator: this.eventAggregator });
-        this.$el.prepend(prependedVehicle.render().$el);
     },*/
     
     render: function() {

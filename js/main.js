@@ -72,8 +72,7 @@ var VehiclesView = Backbone.View.extend({
     },
 
     /*onVehicleAdded: function(vehicle) {
-        var addedVehicle = new VehicleView({model: vehicle});
-        this.model.add(addedVehicle);
+        concole.log("Vehicle entered!")
     },*/
     
     render: function() {
